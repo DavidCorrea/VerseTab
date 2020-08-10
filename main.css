@@ -1,0 +1,97 @@
+:root {
+  --background-color: #3c2946;
+  --primary-color: #ffd571;
+  --secondary-color: #828292;
+}
+
+html, body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 2em 4em;
+
+  font-size: 100%;
+  user-select: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: var(--background-color);  
+}
+
+.verse {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-size: 1em;
+  font-family: 'Antic Slab', serif;
+  color: var(--primary-color);;
+
+  animation-name: fadeIn;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+}
+
+.verse .verse__content {
+  font-size: 6vh;
+  margin-bottom: 20px;
+}
+
+.verse .verse__details {
+  font-size: 3vh;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  font-size: 1.15em;
+  color: var(--secondary-color);
+}
+
+.footer .footer__app-name {
+  justify-content: end;
+}
+
+.footer .footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer__contact .contact__introduction {
+  margin-bottom: 10px;
+}
+
+.footer__contact .contact__link:link,
+.footer__contact .contact__link:visited,
+.footer__contact .contact__link:hover,
+.footer__contact .contact__link:active {
+  color: var(--secondary-color);
+  transition: color .5s ease-in-out;
+  text-decoration: none;
+}
+
+.footer__contact .contact__link:hover {
+  color: var(--primary-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "VerseTab (Alpha)",
+  "version": "0.1",
+  "manifest_version": 2,
+
+  "description": "A new tab, a new verse!",
+  "author": "David Correa",
+
+  "chrome_url_overrides" : {
+    "newtab": "verseTab.html"
+  },
+  "icons": {
+    "16": "images/bible_16.png",
+    "32": "images/bible_32.png",
+    "48": "images/bible_48.png",
+    "128": "images/bible_128.png"
+  }
+}
