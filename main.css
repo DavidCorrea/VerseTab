@@ -32,7 +32,7 @@ html, body {
 
   font-size: 1em;
   font-family: 'Antic Slab', serif;
-  color: var(--primary-color);;
+  color: var(--primary-color);
 
   animation-name: fadeIn;
   animation-duration: .5s;
@@ -60,6 +60,21 @@ html, body {
 
 .footer .footer__app-name {
   justify-content: end;
+}
+
+.footer .footer__instructions {
+  flex: 1;
+
+  text-align: center;
+}
+
+.footer .footer__instructions span {
+  font-size: 1.5vh;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  margin: 1em;
+  padding: .5em;
+  border-radius: 10px;
 }
 
 .footer .footer__contact {
